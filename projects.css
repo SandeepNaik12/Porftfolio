@@ -12,7 +12,8 @@ body{
     height: 100vh;
     width: calc(100%-15%);
     margin-left:10%;
-    justify-content: space-between;
+    justify-content: space-around;
+    gap: 50px;
 }
 .sidebar{
     border-right: 2px solid blue;
@@ -106,7 +107,7 @@ body{
     height: 400px;
     margin-top: 100px;
     padding: 10px;
-    /* justify-content: space-around; */
+    justify-content: space-between;
     transition: 1s ease;
     box-shadow: -0px 5px 12px 1px rgb(208, 7, 7);
     text-align: center;
@@ -128,4 +129,26 @@ body{
 .pr-image{
     margin-top: 50px;
     /* padding: 10px; */
+}
+.projects a{
+  display: none;
+  transition: 1s ease;
+  margin-top: -50px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color:  rgba(0, 0, 0, 0.6);
+  /* width: 100px;
+  height: 100px; */
+  color: aqua;
+  text-decoration: none;
+  
+}
+.projects:hover a{
+  display: block;
+  transform: translateY(-150px);
+}
+.overlay{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
